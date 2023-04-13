@@ -9,7 +9,7 @@ import Error from './pages/Error/Error'
 
 //PARA REALIZAR EL DEPLOY
 import axios from 'axios'
-axios.defaults.baseURL = 'https://pi-deploy-countries-production.up.railway.app/';
+axios.defaults.baseURL = 'https://pi-deploy-countries-production.up.railway.app';
 
 
 function App() {

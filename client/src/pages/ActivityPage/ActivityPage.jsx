@@ -87,7 +87,7 @@ export default function Activities() {
 
     const submitHandler = (event) => {
         event.preventDefault();
-        axios.post('http://localhost:3001/activities', form)
+        axios.post('/activities', form)
             .then(res   => {alert(res.data); window.location.reload(true)})
             .catch(err  => alert(err.response.data.error))
     }
