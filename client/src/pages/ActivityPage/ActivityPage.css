@@ -1,0 +1,92 @@
+.div_containerActivity {
+    font-family: 'Alkatra', cursive;
+    display: flex;
+    min-height: 80vh;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div_containerActivity h1 {
+    text-align: center;
+}
+
+.div_containerActivity form {
+    min-width: 320px;
+    width: 90%;
+    max-width: 600px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: #caddee;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px 5px #8c8c8c3d;
+}
+
+.div_containerActivity form > div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.div_containerActivity form input {
+    padding: 10px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 3px 3px 5px 2px #8c8c8c3d;
+    margin-top: 1rem;
+    transition: all .5 ease;
+}
+
+.div_containerActivity form input:focus-visible {
+    box-shadow: 0px 0px 10px 5px #8c8c8c3d;
+    outline: none;
+}
+
+.div_containerActivity form span {
+    font-size: 0.9rem;
+}
+
+.div_containerActivity button {
+    width: 100%;
+    margin-top: 1rem;
+    border-radius: 10px;
+}
+
+.div_containerActivity button:disabled {
+    background-color: #00000027;;
+}
+
+/*Estilos para los Select options*/
+
+.div_containerSelectors {
+    width: 100%;
+}
+
+.div_containerSelectors select {
+    width: 100%;
+    margin: 1rem 0;
+    padding: 10px;
+    border: none;
+    box-shadow: 3px 2px 8px 2px #dfd9d9;
+}
+
+.div_containerActivity .div_containerCountries, .div_containerCountries  {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.div_containerCountries {
+    margin-right: 1rem;
+}
+
+.div_containerCountries .x {
+    width: 2rem;
+    height: 2rem;
+    background-color: rgb(145, 238, 226);
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 50px;
+    margin: 0;
+    margin-left: 5px;
+}

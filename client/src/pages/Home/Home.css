@@ -1,0 +1,10 @@
+.div_Home {
+    font-family: 'Alkatra', cursive;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    width: 100%;
+    max-width: 1400px;
+    margin: 3rem auto;
+}

@@ -1,0 +1,14 @@
+.div_containerError{
+    color: red;
+    font-size: large;
+}
+
+.error_backhome{
+    color: black;
+    font-size: larger;
+
+}
+
+.error_backhome:hover{
+    color:rgb(109, 201, 224)
+}

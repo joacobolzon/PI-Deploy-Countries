@@ -1,0 +1,55 @@
+.div_containerNav {
+  font-family: 'Alkatra', cursive;
+  width: 100%;
+  background-color: white;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 5px 20px 0px #caddee;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+
+.div_containerNav .div_containerInfo {
+  width: 100%;
+  max-width: 1400px;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.div_containerNav .div_options {
+  display: flex;
+}
+
+/* estilos para los ítems del menú */
+.div_containerNav .div_options a {
+  margin-left: 4rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  font-size: 25px;
+  border: none;
+  background: none;
+}
+
+.div_containerNav .div_options a::before {
+  margin-left: auto;
+}
+
+.div_containerNav .div_options a::after,
+.div_containerNav .div_options a::before {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #caddee ;
+  display: block;
+  transition: 0.5s;
+}
+
+.div_containerNav .div_options a:hover::after,
+.div_containerNav .div_options a:hover::before {
+  width: 100%;
+}

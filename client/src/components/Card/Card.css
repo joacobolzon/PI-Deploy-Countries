@@ -1,0 +1,101 @@
+.div_card {
+  padding: auto;
+  margin: auto;
+  display: flex;
+  background-color: #caddee;
+  height: 145px;
+  border-radius: 15px;
+  box-shadow: 7px 7px 3px 0px #8088fa3d;
+  transition: all .5s ease;
+}
+
+.div_card:hover {
+  box-shadow: 7px 7px 10px 5px #fdefef3d;
+}
+
+.div_card, .div_img {
+  width: 100%;
+}
+
+.div_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.div_card, .div_detail {
+  width: 90%;
+  padding: 1rem;
+}
+
+.div_detail, h3 {
+  letter-spacing: 1px;
+  line-height: 20px;
+  margin: 0;
+  margin-bottom: 0px;
+  font-size: 1rem;
+}
+
+.content_info p {
+  margin: 0;
+  margin-bottom: 2px;
+}
+
+/* Estilos para botón details */
+.btn_viewDetails {
+  border: none;
+  background: none;
+}
+
+.btn_viewDetails span {
+  padding-bottom: 5px;
+  letter-spacing: 2px;
+  font-size: 14px;
+  padding-right: 15px;
+  text-transform: uppercase;
+}
+
+.btn_viewDetails {
+  transform: translateX(-8px);
+  transition: all 0.3s ease;
+}
+
+.div_card:hover .btn_viewDetails {
+  transform: translateX(0);
+}
+
+.btn_viewDetails:active {
+  transform: scale(0.9);
+}
+
+.btn_text {
+  position: relative;
+  color: rgb(74, 182, 245);
+  padding-bottom: 5px;
+}
+
+.btn_text:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(74, 182, 245);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.div_card:hover .btn_viewDetails .btn_text:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.rotate-vertical-center {
+  animation: rotate-vertical-center 2.0s
+}
+@keyframes rotate-vertical-center {
+  0% {transform: rotateY(0)}
+  100% {transform: rotateY(360deg)}
+}

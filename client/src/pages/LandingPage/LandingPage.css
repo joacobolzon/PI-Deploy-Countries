@@ -1,0 +1,63 @@
+/* body{
+    background: url('https://www.eltiempo.com/uploads/2018/08/06/5b68a7c188733.jpeg') no-repeat;
+    background-position: center;
+    background-size: cover;
+} */
+.div_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    background: rgba(109, 150, 240, 0.6);
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.div_containerImg {
+    margin-top: 30px;
+    display: flex;
+    width: 60%;
+}
+
+.div_containerDescription {
+    font-family: 'Alkatra', cursive;
+    padding: 10px;
+    background-color: rgb(45, 99, 216, 80%);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.div_containerDescription h1 {
+    font-size: 40px;
+}
+
+img {
+    width: 50%;
+    max-width: 500px;
+    margin: auto;
+}
+
+.btn_home {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #91c3f0;
+    background: #91c3f0;
+  }
+  .btn_home:hover {
+    background: #fff;
+    color: #0553b8
+  }
