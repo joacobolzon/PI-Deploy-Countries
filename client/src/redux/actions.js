@@ -1,11 +1,11 @@
 import axios from "axios";
 import { GET_COUNTRIES, GET_COUNTRY, ORDER_BY_NAME, ORDER_BY_POPULATION, FILTER_BY_CONTINENT, FILTER_BY_ACTIVITIES, GET_ACTIVITIES, SEARCH_BY_NAME, RESET } from "./action_type";
 
-const URL = 'http://localhost:3001';
+/* const URL = 'http://localhost:3001'; */
 
 export const getCountriesAction = () => {
     return async function (dispatch) {
-        const countriesData = (await axios.get(`${URL}/countries`)).data;
+        const countriesData = (await axios.get(`countries`)).data;
         dispatch({
             type: GET_COUNTRIES,
             payload: countriesData,
@@ -15,7 +15,7 @@ export const getCountriesAction = () => {
 
 export const getCountryByIdAction = (idCountry) => {
     return async function (dispatch) {
-        const countryData = (await axios.get(`http://localhost:3001/countries/${idCountry}`)).data;
+        const countryData = (await axios.get(`countries/${idCountry}`)).data;
         dispatch({
             type: GET_COUNTRY,
             payload: countryData,
@@ -26,7 +26,7 @@ export const getCountryByIdAction = (idCountry) => {
 export function searchByName(name) {
     return async function (dispatch) {
         try {
-            const countrySearchData = (await axios.get(`${URL}/countries/name/${name}`)).data;
+            const countrySearchData = (await axios.get(`countries/name/${name}`)).data;
             countrySearchData?.length ? 
             dispatch({
                 type: SEARCH_BY_NAME,
@@ -48,7 +48,7 @@ export function searchByName(name) {
 
 export const getActivitiesAction = () => {
     return async function (dispatch) {
-        const activitiesData = (await axios.get(`${URL}/activities`)).data;
+        const activitiesData = (await axios.get(`activities`)).data;
         dispatch({
             type: GET_ACTIVITIES,
             payload: activitiesData,
